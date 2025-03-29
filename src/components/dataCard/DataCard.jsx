@@ -43,10 +43,10 @@ const DataCard = ({ data }) => {
 
             <button
                 onClick={() => handleDelete(data)}
-                className=" absolute bottom-2 left-2 rounded-md w-10 h-6 bg-red-500 p-1 cursor-pointer shadow-xs shadow-red-950 active:shadow-none"><MdDeleteForever className="h-full w-full " /></button>
+                className=" absolute bottom-2 left-2 rounded-md w-10 h-7 bg-red-500 p-1 cursor-pointer shadow-xs shadow-red-950 active:shadow-none"><MdDeleteForever className="h-full w-full " /></button>
             <button
             onClick={()=>navigate(`/user/editPage/${data.id}`)}
-            className=" absolute bottom-2 right-2 rounded-md w-10 h-6 bg-blue-500 p-1 cursor-pointer  shadow-xs shadow-blue-950 active:shadow-none"> <AiFillEdit className="h-full w-full" /></button>
+            className=" absolute bottom-2 right-2 rounded-md w-10 h-7 bg-blue-500 p-1 cursor-pointer  shadow-xs shadow-blue-950 active:shadow-none"> <AiFillEdit className="h-full w-full" /></button>
 
         </div>
     )
