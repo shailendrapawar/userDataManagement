@@ -13,13 +13,11 @@ const useFetchUser = (page) => {
     useEffect(() => {
         const fetchUserList = async () => {
             try {
-                const p = page
                 const res = await axios.get(`https://reqres.in/api/users?page=${page}`)
 
                 if (res) {
-                    // console.log(res.data)
-                    dispatch(setUsersList(res.data.data)
-                    )
+                    dispatch(setUsersList(res.data.data))
+                    
                     dispatch(setPageData({
                         page: res.data.page,
                         totalPage: res.data.total_pages,

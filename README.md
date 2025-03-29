@@ -19,9 +19,10 @@
 2:- Git
 # installation
 1:- git clone https://github.com/shailendrapawar/userDataManagement/tree/main/src
-cd userDataManagement
 
-2:-npm install
+2:- cd userDataManagement
+
+3:- npm install
 
 # running the app
 npm run dev
